@@ -1,0 +1,4 @@
+enum TipoCita {
+  TELECONSULTA,
+  PRESENCIAL,
+}

@@ -1,11 +1,9 @@
-import 'dart:ffi';
-
 import 'DetallePago.dart';
 
-void main (){
+void main() {
   print("Hello");
 }
 
-abstract class DescuentoVisitor{
-  double AplicarDescuento ( DetallePago detallePago );
+abstract class DescuentoVisitor {
+  double AplicarDescuento(DetallePago detallePago);
 }
