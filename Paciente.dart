@@ -28,7 +28,7 @@ class Paciente extends Persona {
       this.correo,
       this.suscripcion,
       this.ubicacion)
-      : super(nombre_usuario, contrasena, nombre);
+      : super(nombre_usuario, contrasena, nombre, ubicacion);
 
   solicitarCita(
     Doctor doctor,
@@ -49,7 +49,28 @@ class Paciente extends Persona {
     cita.setEstado(EstadoCita.CANCELADA);
   }
 
-  buscarEspecialidad(String especialidad) {}
+  /*buscarEspecialidad(String especialidad, Directorio directorio) {
+    List<Doctor> lista = [];
+    for (final doc in directorio.doctores) {
+      for (final esp in doc.especialidades) {
+        if (esp.nombre == especialidad) {
+          lista.add(doc);
+        }
+      }
+    }
+    return lista;
+  }
+
+  buscarUbicacion(UbicacionGeografica ubicacion, Directorio directorio) {
+    List<Doctor> lista = [];
+    for (final doc in directorio.doctores) {
+      if (doc.ubicacion.pais == ubicacion.pais &&
+          doc.ubicacion.estado == ubicacion.estado) {
+        lista.add(doc);
+      }
+    }
+    return lista;
+  }*/
 
   setHistoriaMedica(HistoriaMedica historia) {
     this.historia = historia;

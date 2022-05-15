@@ -22,7 +22,7 @@ void main() {
   var sub = new Suscripcion(EstadoSuscripcion.ACTIVA, lista);
   var pac = new Paciente('james', '12345', 'James', 24, 'Informatico', 100,
       '0212', 'james@gmai.com', sub, ubic);
-  var doc = new Doctor('drgonz', '12345', 'Gonzalez');
+  var doc = new Doctor('drgonz', '12345', 'Gonzalez', ubic);
   var cita = pac.solicitarCita(doc, '2022-05-16', TipoCita.PRESENCIAL);
   var notif = new Notificador();
   if (cita != null) {
