@@ -1,5 +1,5 @@
 # Repositorio2-SubgrupoAMVW-The-Geeks ![npm](https://img.shields.io/badge/dart-2.16.2-blue)
-Repositorio 2 (Dart) del Subgrupo conformado por Alejandro Pestana, Miguel Cuadrado y Vicente Mirabal del equipo The Geeks
+Repositorio 2 (Dart) del Subgrupo conformado por Alejandro Pestana, Miguel Cuadrado y Vicente Mirabal del equipo The Geeks.
 
 # Tabla de Contribuciones:
 
@@ -11,11 +11,11 @@ Repositorio 2 (Dart) del Subgrupo conformado por Alejandro Pestana, Miguel Cuadr
 
 Debes descargar e instalar [Flutter](https://flutter.dev).
 
-Para correr el repositorio en [Visual Studio Code](https://code.visualstudio.com), se necesita instalar la [Extensión de Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code).
+Para correr el repositorio en [Visual Studio Code](https://code.visualstudio.com) se necesita instalar la [Extensión de Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code).
 
 Luego, descarga o clona el repositorio en tu máquina.
 
 # Ejecución del Código
 
-Ejecuta el archivo Simulacion.dart que contiene una prueba de la solución al problema planteado en el paper.
+Ejecuta el archivo *Simulacion.dart* que contiene una prueba de la solución al problema planteado en el paper.
 
