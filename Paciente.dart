@@ -37,8 +37,9 @@ class Paciente extends Persona {
   ) {
     if (this.suscripcion.estado == EstadoSuscripcion.ACTIVA) {
       Cita cita = new Cita(fecha, EstadoCita.PENDIENTE, doctor, this, tipo);
+      var nomDoctor = doctor.nombre;
       print(
-          'CITA: Se ha agendado una cita en: $fecha con el Dr. $doctor.nombre bajo la modalidad: $tipo');
+          'CITA: Se ha agendado una cita en: $fecha con el Dr. $nomDoctor bajo la modalidad: $tipo');
       return cita;
     }
     print('No posee una suscripcion ACTIVA');

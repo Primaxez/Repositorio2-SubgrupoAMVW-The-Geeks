@@ -19,7 +19,7 @@ class Registro implements Observable {
     var listaMed = this.mediciones;
     for (var i = 0; i < listaMed.length; i++) {
       if (listaMed[i].valor.nombre == nombreValor) {
-        return listaMed[i].valor;
+        return listaMed[i];
       }
     }
     return null;
@@ -27,7 +27,7 @@ class Registro implements Observable {
 
   editarMedicion(String nombreValor, String evaluacion, Doctor doctor) {
     var med = this.obtenerMedicion(nombreValor);
-    if (med) {
+    if (med != null) {
       med.evaluacion = evaluacion;
       var hoy = new DateTime.now().toIso8601String();
       this.notifyall("El doctor " +

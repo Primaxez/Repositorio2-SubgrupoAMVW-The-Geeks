@@ -10,6 +10,10 @@ class Directorio implements Observable {
 
   Directorio(this.doctores);
 
+  agregarDoctor(Doctor doctor) {
+    this.doctores.add(doctor);
+  }
+
   buscarPorEspecialidad(String nomEspecialidad, Paciente paciente) {
     // Retornar una lista con los doctores que tengan la especialidad indicada
     List<Doctor> listaDocsEsp = [];
@@ -23,10 +27,13 @@ class Directorio implements Observable {
         }
       }
     }
-    notifyall("El paciente " +
+    var hoy = new DateTime.now().toIso8601String();
+    notifyall("Paciente " +
         paciente.nombre +
         " buscó la especialidad " +
-        nomEspecialidad);
+        nomEspecialidad +
+        " el " +
+        hoy);
     return listaDocsEsp;
   }
 
@@ -39,12 +46,15 @@ class Directorio implements Observable {
         listaDocsUbi.add(listaDoc[i]);
       }
     }
-    notifyall("El paciente " +
+    var hoy = new DateTime.now().toIso8601String();
+    notifyall("Paciente " +
         paciente.nombre +
         " buscó la ubicación " +
         ubicacion.ciudad +
         ", " +
-        ubicacion.pais);
+        ubicacion.pais +
+        " el " +
+        hoy);
     return listaDocsUbi;
   }
 
@@ -53,8 +63,11 @@ class Directorio implements Observable {
     /*
     Se debe implementar la búsqueda
     */
-    notifyall(
-        "El paciente " + paciente.nombre + " buscó el Top 10 de doctores");
+    var hoy = new DateTime.now().toIso8601String();
+    notifyall("Paciente " +
+        paciente.nombre +
+        " buscó el Top 10 de doctores el " +
+        hoy);
     return listaDocsTop10;
   }
 
